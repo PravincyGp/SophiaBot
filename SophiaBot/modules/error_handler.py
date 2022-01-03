@@ -9,7 +9,7 @@ import pretty_errors
 import io
 from telegram import Update, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import CallbackContext, CommandHandler
-from SophiaBot import dispatcher, DEV_USERS, OWNER_ID
+from Rosi import dispatcher, DEV_USERS, OWNER_ID
 
 pretty_errors.mono()
 
