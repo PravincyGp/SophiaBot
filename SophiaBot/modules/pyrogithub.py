@@ -1,8 +1,8 @@
-# © @DihanOfficial
+# © @TeamRosi
 import aiohttp
 from pyrogram import filters
-from SophiaBot import pbot
-from SophiaBot.pyrogramee.errors import capture_err
+from Rosi import pbot
+from Rosi.pyrogramee.errors import capture_err
 
 
 __mod_name__ = "Github"
