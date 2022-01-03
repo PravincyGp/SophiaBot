@@ -1,7 +1,7 @@
 # Module to blacklist users and prevent them from using commands by @TheRealPhoenix
 import html
-import SophiaBot.modules.sql.blacklistusers_sql as sql
-from SophiaBot import (
+import Rosi.modules.sql.blacklistusers_sql as sql
+from Rosi import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -10,12 +10,12 @@ from SophiaBot import (
     WOLVES,
     dispatcher,
 )
-from SophiaBot.modules.helper_funcs.chat_status import dev_plus
-from SophiaBot.modules.helper_funcs.extraction import (
+from Rosi.modules.helper_funcs.chat_status import dev_plus
+from Rosi.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from SophiaBot.modules.log_channel import gloggable
+from Rosi.modules.log_channel import gloggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
