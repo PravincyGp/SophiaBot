@@ -1,4 +1,4 @@
-from SophiaBot import LOAD, LOGGER, NO_LOAD
+from Rosi import LOAD, LOGGER, NO_LOAD
 
 
 
