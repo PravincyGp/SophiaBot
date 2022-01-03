@@ -1,6 +1,6 @@
 # credits @InukaAsith, @Mr_dark_prince
 
-# Copyright (C) 2021 dihan official
+# Copyright (C) 2022 Pravincy Gp
 
 # This file is part of Sophia (Telegram Bot)
 
@@ -30,9 +30,9 @@ from pyrogram.errors.exceptions.bad_request_400 import (
 )
 from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboardMarkup
 
-from SophiaBot import DRAGONS as SUDO_USERS
-from SophiaBot import pbot
-from SophiaBot.modules.sql_extended import forceSubscribe_sql as sql
+from Rosi import DRAGONS as SUDO_USERS
+from Rosi import pbot
+from Rosi.modules.sql_extended import forceSubscribe_sql as sql
 
 logging.basicConfig(level=logging.INFO)
 
@@ -200,7 +200,7 @@ def config(client, message):
 __help__ = """
 *ForceSubscribe:*
 
-- Sophia can mute members who are not subscribed your channel until they subscribe
+- Rosi can mute members who are not subscribed your channel until they subscribe
 - When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them
 *Setup*
 1) First of all add me in the group as admin with ban users permission and in the channel as admin.
