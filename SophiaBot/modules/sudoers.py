@@ -1,7 +1,7 @@
 """
 XIT License 2021
 
-Copyright (c) 2021 Dihan Official
+Copyright (c) 2021 Pravincy Gp
 
 
 """
@@ -13,8 +13,8 @@ import time
 import psutil
 from pyrogram import filters
 
-from SophiaBot import (bot_start_time, DEV_USERS, pbot)
-from SophiaBot.utils import formatter
+from Rosi import (bot_start_time, DEV_USERS, pbot)
+from Rosi.utils import formatter
 
 
 
@@ -28,7 +28,7 @@ async def bot_sys_stats():
     disk = psutil.disk_usage("/").percent
     process = psutil.Process(os.getpid())
     stats = f"""
-root@DihanOfficial:~$ Sophia
+root@PravincyGp:~$ Rosi
 ------------------
 UPTIME: {formatter.get_readable_time((bot_uptime))}
 BOT: {round(process.memory_info()[0] / 1024 ** 2)} MB
@@ -39,5 +39,4 @@ DISK: {disk}%
 ------------------
 """
     return stats
-
 
