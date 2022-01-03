@@ -12,9 +12,9 @@ from tswift import Song
 from youtube_dl import YoutubeDL
 from youtubesearchpython import SearchVideos
 
-from SophiaBot.conf import get_str_key
-from SophiaBot.pyrogramee.pluginshelper import get_text, progress
-from SophiaBot import pbot
+from Rosi.conf import get_str_key
+from Rosi.pyrogramee.pluginshelper import get_text, progress
+from Rosi import pbot
 
 GENIUS = get_str_key("GENIUS_API_TOKEN", None)
 
@@ -246,5 +246,4 @@ async def lyrics(client, message):
             f"**Search query**: \n`{artist} - {song}`\n\n```{songs.lyrics}```"
         )
     return
-
 
