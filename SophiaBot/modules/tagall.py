@@ -1,11 +1,11 @@
-# Copyright (C) 2020-2021 by  https://github.com/dihanofficial
+# Copyright (C) 2020-2021 by  https://github.com/PravincyGp
 # All rights reserved.
 
 
 from pyrogram import filters
 
-from SophiaBot.pyrogramee.pluginshelper import admins_only, get_text
-from SophiaBot import pbot
+from Rosi.pyrogramee.pluginshelper import admins_only, get_text
+from Rosi import pbot
 
 
 @pbot.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
