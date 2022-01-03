@@ -5,18 +5,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import SophiaBot.modules.sql.blacklist_sql as sql
-from SophiaBot import dispatcher, LOGGER
-from SophiaBot.modules.disable import DisableAbleCommandHandler
-from SophiaBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from SophiaBot.modules.helper_funcs.extraction import extract_text
-from SophiaBot.modules.helper_funcs.misc import split_message
-from SophiaBot.modules.log_channel import loggable
-from SophiaBot.modules.warns import warn
-from SophiaBot.modules.helper_funcs.string_handling import extract_time
-from SophiaBot.modules.connection import connected
-from SophiaBot.modules.sql.approve_sql import is_approved
-from SophiaBot.modules.helper_funcs.alternate import send_message, typing_action
+import Rosi.modules.sql.blacklist_sql as sql
+from Rosi import dispatcher, LOGGER
+from Rosi.modules.disable import DisableAbleCommandHandler
+from Rosi.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from Rosi.modules.helper_funcs.extraction import extract_text
+from Rosi.modules.helper_funcs.misc import split_message
+from Rosi.modules.log_channel import loggable
+from Rosi.modules.warns import warn
+from Rosi.modules.helper_funcs.string_handling import extract_time
+from Rosi.modules.connection import connected
+from Rosi.modules.sql.approve_sql import is_approved
+from Rosi.modules.helper_funcs.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 
@@ -456,23 +456,23 @@ Blacklists are used to stop certain triggers from being said in a group. Any tim
 
 *NOTE*: Blacklists do not affect group admins.
 
- ❍ /blacklist*:* View the current blacklisted words.
+ 🔖 /blacklist*:* View the current blacklisted words.
 
 Admin only:
- ❍ /addblacklist <triggers>*:* Add a trigger to the blacklist. Each line is considered one trigger, so using different lines will allow you to add multiple triggers.
- ❍ /unblacklist <triggers>*:* Remove triggers from the blacklist. Same newline logic applies here, so you can remove multiple triggers at once.
- ❍ /blacklistmode <off/del/warn/ban/kick/mute/tban/tmute>*:* Action to perform when someone sends blacklisted words.
+ 🔖 /addblacklist <triggers>*:* Add a trigger to the blacklist. Each line is considered one trigger, so using different lines will allow you to add multiple triggers.
+ 🔖 /unblacklist <triggers>*:* Remove triggers from the blacklist. Same newline logic applies here, so you can remove multiple triggers at once.
+ 🔖 /blacklistmode <off/del/warn/ban/kick/mute/tban/tmute>*:* Action to perform when someone sends blacklisted words.
 
 Blacklist sticker is used to stop certain stickers. Whenever a sticker is sent, the message will be deleted immediately.
 *NOTE:* Blacklist stickers do not affect the group admin
- ❍ /blsticker*:* See current blacklisted sticker
+ 🔖 /blsticker*:* See current blacklisted sticker
 *Only admin:*
- ❍ /addblsticker <sticker link>*:* Add the sticker trigger to the black list. Can be added via reply sticker
- ❍ /unblsticker <sticker link>*:* Remove triggers from blacklist. The same newline logic applies here, so you can delete multiple triggers at once
- ❍ /rmblsticker <sticker link>*:* Same as above
- ❍ /blstickermode <ban/tban/mute/tmute>*:* sets up a default action on what to do if users use blacklisted stickers
+ 🔖 /addblsticker <sticker link>*:* Add the sticker trigger to the black list. Can be added via reply sticker
+ 🔖 /unblsticker <sticker link>*:* Remove triggers from blacklist. The same newline logic applies here, so you can delete multiple triggers at once
+ 🔖 /rmblsticker <sticker link>*:* Same as above
+ 🔖 /blstickermode <ban/tban/mute/tmute>*:* sets up a default action on what to do if users use blacklisted stickers
 Note:
- ❍ <sticker link> can be `https://t.me/addstickers/<sticker>` or just `<sticker>` or reply to the sticker message
+ 🔖 <sticker link> can be `https://t.me/addstickers/<sticker>` or just `<sticker>` or reply to the sticker message
 """
 
 BLACKLIST_HANDLER = DisableAbleCommandHandler(
