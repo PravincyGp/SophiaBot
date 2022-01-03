@@ -5,9 +5,9 @@ import time
 from functools import partial
 from contextlib import suppress
 
-import SophiaBot.modules.sql.welcome_sql as sql
-import SophiaBot
-from SophiaBot import (
+import Rosi.modules.sql.welcome_sql as sql
+import Rosi
+from Rosi import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -19,18 +19,18 @@ from SophiaBot import (
     dispatcher,
     JOIN_LOGGER
 )
-from SophiaBot.modules.helper_funcs.chat_status import (
+from Rosi.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
 )
-from SophiaBot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from SophiaBot.modules.helper_funcs.msg_types import get_welcome_type
-from SophiaBot.modules.helper_funcs.string_handling import (
+from Rosi.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from Rosi.modules.helper_funcs.msg_types import get_welcome_type
+from Rosi.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from SophiaBot.modules.log_channel import loggable
-from SophiaBot.modules.sql.global_bans_sql import is_user_gbanned
+from Rosi.modules.log_channel import loggable
+from Rosi.modules.sql.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions,
     InlineKeyboardButton,
@@ -265,7 +265,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome yourself
             elif new_mem.id == bot.id:
                 creator = None
-                if not SophiaBot.ALLOW_CHATS:
+                if not Rosi.ALLOW_CHATS:
                     with suppress(BadRequest):
                          update.effective_message.reply_text(f"Groups are disabled for {bot.first_name}, I'm outta here.")
                     bot.leave_chat(update.effective_chat.id)
