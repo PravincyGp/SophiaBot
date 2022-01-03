@@ -1,4 +1,4 @@
-from SophiaBot import telethn as tbot
+from Rosi import telethn as tbot
 import io
 import os
 import time
@@ -9,9 +9,9 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from SophiaBot import *
+from Rosi import *
 
-from SophiaBot.events import register
+from Rosi.events import register
 
 
 async def is_register_admin(chat, user):
