@@ -3,14 +3,14 @@ from io import BytesIO
 import random
 from typing import Optional
 
-import SophiaBot.modules.sql.notes_sql as sql
-from SophiaBot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
-from SophiaBot.modules.disable import DisableAbleCommandHandler
-from SophiaBot.modules.helper_funcs.handlers import MessageHandlerChecker
-from SophiaBot.modules.helper_funcs.chat_status import user_admin, connection_status
-from SophiaBot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from SophiaBot.modules.helper_funcs.msg_types import get_note_type
-from SophiaBot.modules.helper_funcs.string_handling import (
+import Rosi.modules.sql.notes_sql as sql
+from Rosi import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
+from Rosi.modules.disable import DisableAbleCommandHandler
+from Rosi.modules.helper_funcs.handlers import MessageHandlerChecker
+from Rosi.modules.helper_funcs.chat_status import user_admin, connection_status
+from Rosi .modules.helper_funcs.misc import build_keyboard, revert_buttons
+from Rosi.modules.helper_funcs.msg_types import get_note_type
+from Rosi.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
 )
 from telegram import (
@@ -281,7 +281,7 @@ def save(update: Update, context: CallbackContext):
             msg.reply_text(
                 "Seems like you're trying to save a message from a bot. Unfortunately, "
                 "bots can't forward bot messages, so I can't save the exact message. "
-                "\nI'll save all the text I can, but if you want more, you'll have to "
+                 "\nI'll save all the text I can, but if you want more, you'll have to "
                 "forward the message yourself, and then save it."
             )
         else:
