@@ -14,9 +14,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import SophiaBot.modules.sql.global_bans_sql as sql
-from SophiaBot.modules.sql.users_sql import get_user_com_chats
-from SophiaBot import (
+import Rosi.modules.sql.global_bans_sql as sql
+from Rosi.modules.sql.users_sql import get_user_com_chats
+from Rosi import (
     DEV_USERS,
     EVENT_LOGS,
     OWNER_ID,
@@ -30,12 +30,12 @@ from SophiaBot import (
     sw,
     dispatcher,
 )
-from SophiaBot.modules.helper_funcs.chat_status import (
+from Rosi.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from SophiaBot.modules.helper_funcs.extraction import (
+from Rosi.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
@@ -487,13 +487,13 @@ def gbanstat(update: Update, context: CallbackContext):
         if args[0].lower() in ["on", "yes"]:
             sql.enable_gbans(update.effective_chat.id)
             update.effective_message.reply_text(
-                "Antispam is now enabled ✅ "
+                "Antispam is now enabled ☑️ "
                 "I am now protecting your group from potential remote threats!"
             )
         elif args[0].lower() in ["off", "no"]:
             sql.disable_gbans(update.effective_chat.id)
             update.effective_message.reply_text(
-                "Antispan is now disabled ❌ " "Spamwatch is now disabled ❌"
+                "Antispan is now disabled ❎ " "Spamwatch is now disabled ❌"
             )
     else:
         update.effective_message.reply_text(
