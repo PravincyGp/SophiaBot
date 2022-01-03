@@ -15,25 +15,25 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html, escape_markdown
 
-from SophiaBot import dispatcher, LOGGER, DRAGONS
-from SophiaBot.modules.disable import DisableAbleCommandHandler
-from SophiaBot.modules.helper_funcs.handlers import MessageHandlerChecker
-from SophiaBot.modules.helper_funcs.chat_status import user_admin
-from SophiaBot.modules.helper_funcs.extraction import extract_text
-from SophiaBot.modules.helper_funcs.filters import CustomFilters
-from SophiaBot.modules.helper_funcs.misc import build_keyboard_parser
-from SophiaBot.modules.helper_funcs.msg_types import get_filter_type
-from SophiaBot.modules.helper_funcs.string_handling import (
+from Rosi import dispatcher, LOGGER, DRAGONS
+from Rosi.modules.disable import DisableAbleCommandHandler
+from Rosi.modules.helper_funcs.handlers import MessageHandlerChecker
+from Rosi.modules.helper_funcs.chat_status import user_admin
+from Rosi.modules.helper_funcs.extraction import extract_text
+from Rosi.modules.helper_funcs.filters import CustomFilters
+from Rosi.modules.helper_funcs.misc import build_keyboard_parser
+from Rosi.modules.helper_funcs.msg_types import get_filter_type
+from Rosi.modules.helper_funcs.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from SophiaBot.modules.sql import cust_filters_sql as sql
+from Rosi.modules.sql import cust_filters_sql as sql
 
-from SophiaBot.modules.connection import connected
+from Rosi.modules.connection import connected
 
-from SophiaBot.modules.helper_funcs.alternate import send_message, typing_action
+from Rosi.modules.helper_funcs.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 
