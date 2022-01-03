@@ -1,17 +1,17 @@
 import html
 from typing import Optional
 
-import SophiaBot.modules.sql.blsticker_sql as sql
-from SophiaBot import LOGGER, dispatcher
-from SophiaBot.modules.connection import connected
-from SophiaBot.modules.disable import DisableAbleCommandHandler
-from SophiaBot.modules.helper_funcs.alternate import send_message
-from SophiaBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from SophiaBot.modules.helper_funcs.misc import split_message
-from SophiaBot.modules.helper_funcs.string_handling import extract_time
+import Rosi.modules.sql.blsticker_sql as sql
+from Rosi import LOGGER, dispatcher
+from Rosi.modules.connection import connected
+from Rosi.modules.disable import DisableAbleCommandHandler
+from Rosi.modules.helper_funcs.alternate import send_message
+from Rosi.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from Rosi.modules.helper_funcs.misc import split_message
+from Rosi.modules.helper_funcs.string_handling import extract_time
 
-from SophiaBot.modules.log_channel import loggable
-from SophiaBot.modules.warns import warn
+from Rosi.modules.log_channel import loggable
+from Rosi.modules.warns import warn
 from telegram import Chat, Message, ParseMode, Update, User, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
