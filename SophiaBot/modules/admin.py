@@ -5,9 +5,9 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from SophiaBot import DRAGONS, dispatcher
-from SophiaBot.modules.disable import DisableAbleCommandHandler
-from SophiaBot.modules.helper_funcs.chat_status import (
+from Rosi import DRAGONS, dispatcher
+from Rosi.modules.disable import DisableAbleCommandHandler
+from Rosi.modules.helper_funcs.chat_status import (
     bot_admin,
     can_pin,
     can_promote,
@@ -15,19 +15,19 @@ from SophiaBot.modules.helper_funcs.chat_status import (
     user_admin,
     ADMIN_CACHE,
 )
-from SophiaBot.helper_extra.admin_rights import (
+from Rosi.helper_extra.admin_rights import (
     user_can_pin,
     user_can_promote,
     user_can_changeinfo,
 )
 
-from SophiaBot.modules.helper_funcs.extraction import (
+from Rosi.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from SophiaBot.modules.log_channel import loggable
-from SophiaBot.modules.helper_funcs.alternate import send_message
-from SophiaBot.modules.helper_funcs.alternate import typing_action
+from Rosi.modules.log_channel import loggable
+from Rosi.modules.helper_funcs.alternate import send_message
+from Rosi.modules.helper_funcs.alternate import typing_action
 
 
 @run_async
@@ -637,25 +637,25 @@ def adminlist(update, context):
 
 
 __help__ = """
- ❍ /admins: list of admins in the chat
+ 🔅 /admins: list of admins in the chat
 
 *Admins only:*
- ❍ /pin: silently pins the message replied to - add 'loud' or 'notify' to give notifs to users
- ❍ /unpin: unpins the currently pinned message
- ❍ /invitelink: gets invitelink
- ❍ /promote: promotes the user
- ❍ /demote: demotes the user
- ❍ /title <title here>: sets a custom title for an admin that the bot promoted
- ❍ /setgtitle <newtitle>: Sets new chat title in your group.
- ❍ /setgpic: As a reply to file or photo to set group profile pic!
- ❍ /delgpic: Same as above but to remove group profile pic.
- ❍ /setsticker: As a reply to some sticker to set it as group sticker set!
- ❍ /setdescription <description>: Sets new chat description in group.
- ❍ /admincache: force refresh the admins list
- ❍ /antispam <on/off/yes/no>: Will toggle our antispam tech or return your current settings.
- ❍ /del: deletes the message you replied to
- ❍ /purge: deletes all messages between this and the replied to message.
- ❍ /purge <integer X>: deletes the replied message, and X messages following it if replied to a message.
+ 🔅 /pin: silently pins the message replied to - add 'loud' or 'notify' to give notifs to users
+ 🔅 /unpin: unpins the currently pinned message
+ 🔅 /invitelink: gets invitelink
+ 🔅 /promote: promotes the user
+ 🔅 /demote: demotes the user
+ 🔅 /title <title here>: sets a custom title for an admin that the bot promoted
+ 🔅 /setgtitle <newtitle>: Sets new chat title in your group.
+ 🔅 /setgpic: As a reply to file or photo to set group profile pic!
+ 🔅 /delgpic: Same as above but to remove group profile pic.
+ 🔅 /setsticker: As a reply to some sticker to set it as group sticker set!
+ 🔅 /setdescription <description>: Sets new chat description in group.
+ 🔅 /admincache: force refresh the admins list
+ 🔅 /antispam <on/off/yes/no>: Will toggle our antispam tech or return your current settings.
+ 🔅 /del: deletes the message you replied to
+ 🔅 /purge: deletes all messages between this and the replied to message.
+ 🔅 /purge <integer X>: deletes the replied message, and X messages following it if replied to a message.
 
 *Note*: Night Mode chats get Automatically closed at 12 am(IST)
 and Automatically openned at 6 am(IST) To Prevent Night Spams.
