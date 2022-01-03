@@ -5,10 +5,10 @@ from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Upda
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CommandHandler, CallbackQueryHandler, run_async
 
-import SophiaBot.modules.sql.connection_sql as sql
-from SophiaBot import dispatcher, DRAGONS, DEV_USERS
-from SophiaBot.modules.helper_funcs import chat_status
-from SophiaBot.modules.helper_funcs.alternate import send_message, typing_action
+import Rosi.modules.sql.connection_sql as sql
+from Rosi import dispatcher, DRAGONS, DEV_USERS
+from Rosi.modules.helper_funcs import chat_status
+from Rosi.modules.helper_funcs.alternate import send_message, typing_action
 
 user_admin = chat_status.user_admin
 
@@ -149,7 +149,7 @@ def connect_chat(update, context):
             if gethistory:
                 buttons = [
                     InlineKeyboardButton(
-                        text="❎ Close button", callback_data="connect_close"
+                        text=❌ Close button", callback_data="connect_close"
                     ),
                     InlineKeyboardButton(
                         text="🧹 Clear history", callback_data="connect_clear"
