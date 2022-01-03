@@ -11,10 +11,10 @@ from telegram.ext import (
     run_async,
 )
 
-import SophiaBot.modules.sql.users_sql as sql
-from SophiaBot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
-from SophiaBot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
-from SophiaBot.modules.sql.users_sql import get_all_users
+import Rosi.modules.sql.users_sql as sql
+from Rosi import DEV_USERS, LOGGER, OWNER_ID, dispatcher
+from Rosi.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from Rosi.modules.sql.users_sql import get_all_users
 
 USERS_GROUP = 4
 CHAT_GROUP = 5
