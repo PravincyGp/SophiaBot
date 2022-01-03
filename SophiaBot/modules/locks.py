@@ -9,20 +9,20 @@ from telegram.utils.helpers import mention_html
 
 from alphabet_detector import AlphabetDetector
 
-import SophiaBot.modules.sql.locks_sql as sql
-from SophiaBot import dispatcher, DRAGONS, LOGGER
-from SophiaBot.modules.disable import DisableAbleCommandHandler
-from SophiaBot.modules.helper_funcs.chat_status import (
+import Rosi.modules.sql.locks_sql as sql
+from Rosi import dispatcher, DRAGONS, LOGGER
+from Rosi.modules.disable import DisableAbleCommandHandler
+from Rosi.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
     user_not_admin,
     is_bot_admin,
     user_admin,
 )
-from SophiaBot.modules.log_channel import loggable
-from SophiaBot.modules.connection import connected
-from SophiaBot.modules.sql.approve_sql import is_approved
-from SophiaBot.modules.helper_funcs.alternate import send_message, typing_action
+from Rosi.modules.log_channel import loggable
+from Rosi.modules.connection import connected
+from Rosi.modules.sql.approve_sql import is_approved
+from Rosi.modules.helper_funcs.alternate import send_message, typing_action
 
 ad = AlphabetDetector()
 
