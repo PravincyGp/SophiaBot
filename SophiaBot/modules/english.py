@@ -1,7 +1,7 @@
-# Copyright (C) 2021 Dihan Official
+# Copyright (C) 2022 Pravincy Gp
 
 
-# This file is part of Sophia (Telegram Bot)
+# This file is part of Rosi (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -27,7 +27,7 @@ import aiohttp
 
 from telethon.tl.types import *
 
-from SophiaBot.events import register
+from Rosi.events import register
 
 API_KEY = "6ae0c3a0-afdc-4532-a810-82ded0054236"
 URL = "http://services.gingersoftware.com/Ginger/correct/json/GingerTheText"
@@ -100,7 +100,7 @@ async def _(event):
 
 
 __help__ = """
-*Sophia can help you with English*
+*Rosi can help you with English*
 
 *Commands:*
 • `/synonyms <word>`*:* find the synonyms of a word.
