@@ -1,9 +1,9 @@
 import html
 
-from SophiaBot import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
-from SophiaBot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from SophiaBot.modules.log_channel import loggable
-from SophiaBot.modules.sql import reporting_sql as sql
+from Rosi import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
+from Rosi.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from Rosi.modules.log_channel import loggable
+from Rosi.modules.sql import reporting_sql as sql
 from telegram import Chat, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
@@ -97,7 +97,7 @@ def report(update: Update, context: CallbackContext) -> str:
             message.reply_text("Uh? You reporting a disaster?")
             return ""
 
-        if chat.username and chat.type == Chat.SUPERGROUP:
+        if chat.username and chat.type == Chat.💯SUPERGROUP:
 
             reported = f"{mention_html(user.id, user.first_name)} reported {mention_html(reported_user.id, reported_user.first_name)} to the admins!"
 
@@ -117,17 +117,17 @@ def report(update: Update, context: CallbackContext) -> str:
                 ],
                 [
                     InlineKeyboardButton(
-                        "⚠ Kick",
+                        "⚠️ Kick",
                         callback_data=f"report_{chat.id}=kick={reported_user.id}={reported_user.first_name}",
                     ),
                     InlineKeyboardButton(
-                        "⛔️ Ban",
+                        "🚫 Ban",
                         callback_data=f"report_{chat.id}=banned={reported_user.id}={reported_user.first_name}",
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "❎ Delete Message",
+                        "❌ Delete Message",
                         callback_data=f"report_{chat.id}=delete={reported_user.id}={message.reply_to_message.message_id}",
                     )
                 ],
@@ -149,7 +149,7 @@ def report(update: Update, context: CallbackContext) -> str:
 
             if sql.user_should_report(admin.user.id):
                 try:
-                    if not chat.type == Chat.SUPERGROUP:
+                    if not chat.type == Chat.💯SUPERGROUP:
                         bot.send_message(
                             admin.user.id, msg + link, parse_mode=ParseMode.HTML
                         )
@@ -174,7 +174,7 @@ def report(update: Update, context: CallbackContext) -> str:
                             ):  # If user is giving a reason, send his message too
                                 message.forward(admin.user.id)
 
-                    if chat.username and chat.type == Chat.SUPERGROUP:
+                    if chat.username and chat.type == Chat.💯SUPERGROUP:
                         bot.send_message(
                             admin.user.id,
                             msg + link,
@@ -228,7 +228,7 @@ def buttons(update: Update, context: CallbackContext):
         try:
             bot.kickChatMember(splitter[0], splitter[2])
             bot.unbanChatMember(splitter[0], splitter[2])
-            query.answer("✅ Succesfully kicked")
+            query.answer("☑️ Succesfully kicked")
             return ""
         except Exception as err:
             query.answer("🛑 Failed to Punch")
@@ -240,7 +240,7 @@ def buttons(update: Update, context: CallbackContext):
     elif splitter[1] == "banned":
         try:
             bot.kickChatMember(splitter[0], splitter[2])
-            query.answer("✅  Succesfully Banned")
+            query.answer("☑️  Succesfully Banned")
             return ""
         except Exception as err:
             bot.sendMessage(
@@ -252,7 +252,7 @@ def buttons(update: Update, context: CallbackContext):
     elif splitter[1] == "delete":
         try:
             bot.deleteMessage(splitter[0], splitter[3])
-            query.answer("✅ Message Deleted")
+            query.answer("☑️ Message Deleted")
             return ""
         except Exception as err:
             bot.sendMessage(
