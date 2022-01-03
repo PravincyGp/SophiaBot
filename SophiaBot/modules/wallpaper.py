@@ -1,8 +1,8 @@
 from random import randint
 
 import requests as r
-from SophiaBot import SUPPORT_CHAT, WALL_API, dispatcher
-from SophiaBot.modules.disable import DisableAbleCommandHandler
+from Rosi import SUPPORT_CHAT, WALL_API, dispatcher
+from Rosi.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
