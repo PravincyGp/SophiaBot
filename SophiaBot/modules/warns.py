@@ -3,9 +3,9 @@ import re
 from typing import Optional
 
 import telegram
-from SophiaBot import TIGERS, WOLVES, dispatcher
-from SophiaBot.modules.disable import DisableAbleCommandHandler
-from SophiaBot.modules.helper_funcs.chat_status import (
+from Rosi import TIGERS, WOLVES, dispatcher
+from Rosi.modules.disable import DisableAbleCommandHandler
+from Rosi.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     is_user_admin,
@@ -14,16 +14,16 @@ from SophiaBot.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     can_delete,
 )
-from SophiaBot.modules.helper_funcs.extraction import (
+from Rosi.modules.helper_funcs.extraction import (
     extract_text,
     extract_user,
     extract_user_and_text,
 )
-from SophiaBot.modules.helper_funcs.filters import CustomFilters
-from SophiaBot.modules.helper_funcs.misc import split_message
-from SophiaBot.modules.helper_funcs.string_handling import split_quotes
-from SophiaBot.modules.log_channel import loggable
-from SophiaBot.modules.sql import warns_sql as sql
+from Rosi.modules.helper_funcs.filters import CustomFilters
+from Rosi.modules.helper_funcs.misc import split_message
+from Rosi.modules.helper_funcs.string_handling import split_quotes
+from Rosi.modules.log_channel import loggable
+from Rosi.modules.sql import warns_sql as sql
 from telegram import (
     CallbackQuery,
     Chat,
@@ -45,7 +45,7 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html
-from SophiaBot.modules.sql.approve_sql import is_approved
+from Rosi.modules.sql.approve_sql import is_approved
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = "<b>Current warning filters in this chat:</b>\n"
