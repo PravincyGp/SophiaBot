@@ -13,7 +13,7 @@ from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from SophiaBot import (
+from Rosi import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -24,15 +24,15 @@ from SophiaBot import (
     dispatcher,
     sw,
 )
-from SophiaBot.__main__ import STATS, TOKEN, USER_INFO
-import SophiaBot.modules.sql.userinfo_sql as sql
-from SophiaBot.modules.disable import DisableAbleCommandHandler
-from SophiaBot.modules.sql.global_bans_sql import is_user_gbanned
-from SophiaBot.modules.sql.afk_sql import is_afk, check_afk_status
-from SophiaBot.modules.sql.users_sql import get_user_num_chats
-from SophiaBot.modules.helper_funcs.chat_status import sudo_plus
-from SophiaBot.modules.helper_funcs.extraction import extract_user
-from SophiaBot import telethn as YoneTelethonClient, TIGERS, DRAGONS, DEMONS
+from Rosi.__main__ import STATS, TOKEN, USER_INFO
+import Rosi.modules.sql.userinfo_sql as sql
+from Rosi.modules.disable import DisableAbleCommandHandler
+from Rosi.modules.sql.global_bans_sql import is_user_gbanned
+from Rosi.modules.sql.afk_sql import is_afk, check_afk_status
+from Rosi.modules.sql.users_sql import get_user_num_chats
+from Rosi.modules.helper_funcs.chat_status import sudo_plus
+from Rosi.modules.helper_funcs.extraction import extract_user
+from Rosi import telethn as YoneTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
 def no_by_per(totalhp, percentage):
@@ -422,7 +422,7 @@ def set_about_me(update: Update, context: CallbackContext):
 @run_async
 @sudo_plus
 def stats(update: Update, context: CallbackContext):
-    stats = "<b>📊 Sophia's Current stats:</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
+    stats = "<b>📊 Rosi's Current stats:</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
     result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
     update.effective_message.reply_text(result, parse_mode=ParseMode.HTML)
 
