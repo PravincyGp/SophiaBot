@@ -1,9 +1,9 @@
 from typing import Optional
 
-import SophiaBot.modules.sql.rules_sql as sql
-from SophiaBot import dispatcher
-from SophiaBot.modules.helper_funcs.chat_status import user_admin
-from SophiaBot.modules.helper_funcs.string_handling import markdown_parser
+import Rosi.modules.sql.rules_sql as sql
+from Rosi import dispatcher
+from Rosi.modules.helper_funcs.chat_status import user_admin
+from Rosi.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
