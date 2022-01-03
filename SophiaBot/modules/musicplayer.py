@@ -1,7 +1,7 @@
-__mod_name__ = "Music Player"
+__mod_name__ = "🎧Music Player🎧"
 
 __help__ = """
-=>> *Song Playing* 🎧 
+=>> *Song Playing* ✨🎶✨
 - /play <song name> - play song you requested
 - /dplay <song name> - play song you requested via deezer
 - /splay <song name> - play song you requested via jio saavn
@@ -23,6 +23,8 @@ __help__ = """
 - /reload - Refresh admin list
 
 =>>   *Use*
-1) Add @SophiaSLBot in your group to admin with all permission
-2) Add Assistant I'd to your group @DihanOfficialAssistant
+1) Add @Rosi_Gp_bot in your group to admin with all permission
+2) Add Assistant I'd to your group @TeamRosi
+
+
 """
