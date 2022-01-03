@@ -2,18 +2,18 @@ import html
 import random
 import time
 
-import SophiaBot.modules.fun_strings as fun_strings
-from SophiaBot import dispatcher
-from SophiaBot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
-from SophiaBot.modules.helper_funcs.chat_status import is_user_admin
-from SophiaBot.modules.helper_funcs.alternate import typing_action
-from SophiaBot.modules.helper_funcs.filters import CustomFilters
-from SophiaBot.modules.helper_funcs.extraction import extract_user
+import Rosi.modules.fun_strings as fun_strings
+from Rosi import dispatcher
+from Rosi.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
+from Rosi.modules.helper_funcs.chat_status import is_user_admin
+from Rosi.modules.helper_funcs.alternate import typing_action
+from Rosi.modules.helper_funcs.filters import CustomFilters
+from Rosi.modules.helper_funcs.extraction import extract_user
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, run_async, CommandHandler, Filters
 
-import SophiaBot.modules.helper_funcs.string_store as fun
+import Rosi.modules.helper_funcs.string_store as fun
 
 GIF_ID = "CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE"
 
@@ -346,7 +346,7 @@ def goodmorning(update, context):
 
 @run_async
 @typing_action
-def sophia(update, context):
+def Rosi(update, context):
     message = update.effective_message
     reply = random.choice(fun.SOPHIA)
     message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
@@ -390,7 +390,7 @@ GDNIGHT_HANDLER = DisableAbleMessageHandler(
     Filters.regex(r"(?i)(gn|good night)"), goodnight, friendly="goodnight"
 )
 SOPHIA_HANDLER = DisableAbleMessageHandler(
-    Filters.regex(r"(?i)(sophi|sophia)"), sophia, friendly="sophia"
+    Filters.regex(r"(?i)(Rosi|Rosi)"), Rosi, friendly="Rosi"
 )
 
 dispatcher.add_handler(WEEBIFY_HANDLER)
