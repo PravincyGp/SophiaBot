@@ -1,11 +1,11 @@
 import html
-from SophiaBot.modules.disable import DisableAbleCommandHandler
-from SophiaBot import dispatcher, DRAGONS
-from SophiaBot.modules.helper_funcs.extraction import extract_user
+from Rosi.modules.disable import DisableAbleCommandHandler
+from Rosi import dispatcher, DRAGONS
+from Rosi.modules.helper_funcs.extraction import extract_user
 from telegram.ext import CallbackContext, CallbackQueryHandler, Filters, run_async
-import SophiaBot.modules.sql.approve_sql as sql
-from SophiaBot.modules.helper_funcs.chat_status import user_admin
-from SophiaBot.modules.log_channel import loggable
+import Rosi.modules.sql.approve_sql as sql
+from Rosi.modules.helper_funcs.chat_status import user_admin
+from Rosi.modules.log_channel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import BadRequest
