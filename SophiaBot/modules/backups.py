@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import SophiaBot.modules.sql.notes_sql as sql
-from SophiaBot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from SophiaBot.__main__ import DATA_IMPORT
-from SophiaBot.modules.helper_funcs.chat_status import user_admin
-from SophiaBot.modules.helper_funcs.alternate import typing_action
+import Rosi.modules.sql.notes_sql as sql
+from Rosi import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
+from Rosi.__main__ import DATA_IMPORT
+from Rosi.modules.helper_funcs.chat_status import user_admin
+from Rosi.modules.helper_funcs.alternate import typing_action
 
-# from SophiaBot.modules.rules import get_rules
-import SophiaBot.modules.sql.rules_sql as rulessql
+# from Rosi.modules.rules import get_rules
+import Rosi.modules.sql.rules_sql as rulessql
 
-# from SophiaBot.modules.sql import warns_sql as warnssql
-import SophiaBot.modules.sql.blacklist_sql as blacklistsql
-from SophiaBot.modules.sql import disable_sql as disabledsql
+# from Rosi.modules.sql import warns_sql as warnssql
+import Rosi.modules.sql.blacklist_sql as blacklistsql
+from Rosi.modules.sql import disable_sql as disabledsql
 
-# from SophiaBot.modules.sql import cust_filters_sql as filtersql
-# import SophiaBot.modules.sql.welcome_sql as welcsql
-import SophiaBot.modules.sql.locks_sql as locksql
-from SophiaBot.modules.connection import connected
+# from Rosi.modules.sql import cust_filters_sql as filtersql
+# import Rosi.modules.sql.welcome_sql as welcsql
+import Rosi.modules.sql.locks_sql as locksql
+from Rosi.modules.connection import connected
 
 
 @run_async
