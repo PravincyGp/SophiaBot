@@ -1,9 +1,9 @@
 from time import sleep
 
-import SophiaBot.modules.sql.global_bans_sql as gban_sql
-import SophiaBot.modules.sql.users_sql as user_sql
-from SophiaBot import DEV_USERS, OWNER_ID, dispatcher
-from SophiaBot.modules.helper_funcs.chat_status import dev_plus
+import Rosi.modules.sql.global_bans_sql as gban_sql
+import Rosi.modules.sql.users_sql as user_sql
+from Rosi import DEV_USERS, OWNER_ID, dispatcher
+from Rosi.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
