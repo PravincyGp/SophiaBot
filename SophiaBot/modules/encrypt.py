@@ -1,6 +1,6 @@
-# Copyright (C) 2021 dihan official
+# Copyright (C) 2022 Pravincy Gp
 
-# This file is part of Sophia (Telegram Bot)
+# This file is part of Rosi (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -17,9 +17,9 @@
 
 
 
-from SophiaBot import telethn as tbot
+from Rosi import telethn as tbot
 import os
-from SophiaBot.events import register
+from Rosi.events import register
 import secureme
 
 @register(pattern="^/encrypt ?(.*)")
