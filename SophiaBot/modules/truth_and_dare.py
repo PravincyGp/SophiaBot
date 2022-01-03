@@ -1,9 +1,9 @@
 import html
 import random
-import SophiaBot.modules.truth_and_dare_string as truth_and_dare_string
-from SophiaBot import dispatcher
+import Rosi.modules.truth_and_dare_string as truth_and_dare_string
+from Rosi import dispatcher
 from telegram import ParseMode, Update, Bot
-from SophiaBot.modules.disable import DisableAbleCommandHandler
+from Rosi.modules.disable import DisableAbleCommandHandler
 from telegram.ext import CallbackContext, run_async
 
 @run_async
@@ -23,4 +23,3 @@ DARE_HANDLER = DisableAbleCommandHandler("dare", dare)
 
 dispatcher.add_handler(TRUTH_HANDLER)
 dispatcher.add_handler(DARE_HANDLER)
-
