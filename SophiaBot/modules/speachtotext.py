@@ -1,6 +1,6 @@
-# Copyright (C) 2021 dihan official
+# Copyright (C) 2021 Pravincy Gp
 
-# This file is part of Sophia (Telegram Bot)
+# This file is part of Rosi (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -16,7 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-from SophiaBot import telethn as tbot
+from Rosi import telethn as tbot
 import os
 import urllib.request
 from datetime import datetime
@@ -29,8 +29,8 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from SophiaBot import *
-from SophiaBot.events import register
+from Rosi import *
+from Rosi.events import register
 
 
 async def is_register_admin(chat, user):
@@ -51,7 +51,7 @@ async def _(event):
         return
     if event.is_group:
      if not (await is_register_admin(event.input_chat, event.message.sender_id)):
-       await event.reply("🚨 Need Admin Pewer.. You can't use this command.. But you can use in my [Pm](http://t.me/SophiaSLBot)")
+       await event.reply("🚨 Need Admin Pewer.. You can't use this command.. But you can use in my [Pm](http://t.me/Rosi_Gp_bot)")
        return
 
     start = datetime.now()
