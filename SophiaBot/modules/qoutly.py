@@ -9,7 +9,7 @@ from fontTools.ttLib import TTFont
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 from telethon.tl import functions, types
 
-from SophiaBot.events import register
+from Rosi.events import register
 
 COLORS = [
     "#F07975",
