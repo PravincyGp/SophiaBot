@@ -1,6 +1,6 @@
-# Credits for @DihanOfficial
+# Credits for @TeamRosi
 
-# Copyright (C) 2021 dihan official
+# Copyright (C) 2021 Pravincy Gp
 
 
 # This file is part of Sophia (Telegram Bot)
@@ -24,8 +24,8 @@ import requests
 import wget
 from pyrogram import filters
 
-from SophiaBot import pbot as Dihan
-from SophiaBot.pyrogramee.dark import get_arg
+from Rosi import pbot as Dihan
+from Rosi.pyrogramee.dark import get_arg
 
 
 @Dihan.on_message(filters.command("saavn"))
@@ -56,13 +56,13 @@ async def song(client, message):
 
 
 #deezer#
-# Credits for @TheHamkerCat
+# Credits for @Gplove_Rp
 
 import os
 import aiofiles
 import aiohttp
 from pyrogram import filters
-from SophiaBot import pbot as Sophia
+from Rosi import pbot as Rosi
 
 ARQ = "https://thearq.tech/"
 
@@ -86,7 +86,7 @@ async def download_song(url):
     return song_name
 
 
-@Sophia.on_message(filters.command("deezer"))
+@Rosi.on_message(filters.command("deezer"))
 async def deezer(_, message):
     if len(message.command) < 2:
         await message.reply_text("Download Now Deezer")
@@ -110,13 +110,13 @@ async def deezer(_, message):
     await m.delete()
 
 #Deezer
-# Credits for @TheHamkerCat
+# Credits for @Gplove_Rp
 
 import os
 import aiofiles
 import aiohttp
 from pyrogram import filters
-from SophiaBot import pbot as CHABEE
+from Rosi import pbot as CHABEE
 
 ARQ = "https://thearq.tech/"
 
@@ -173,6 +173,5 @@ __help__ = """
 • `/lyrics`** <songname artist(optional)>: sends the complete lyrics of the song provided as input
 • `/glyrics`** <i> song name </i> : This plugin searches for song lyrics with song name and artist.
 
-@SophiaSLBot 
+@Rosi_Gp_bot 
 """
-
