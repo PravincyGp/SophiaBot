@@ -1,9 +1,9 @@
 import json
 
-# Copyright (C) 2021 Dihan Official
+# Copyright (C) 2021 Pravincy Gp
 
 
-# This file is part of Sophia (Telegram Bot)
+# This file is part of Rosi (Telegram Bot)
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -25,8 +25,8 @@ import json
 
 import requests
 
-from SophiaBot import telethn as client
-from SophiaBot.events import register
+from Rosi import telethn as client
+from Rosi.events import register
 
 
 async def is_register_admin(chat, user):
@@ -51,7 +51,7 @@ async def is_register_admin(chat, user):
     else:
         return None
 
-# Join Our Channel @SophiaUpdates
+# Join Our Channel @RosiUpdates
 
 @register(pattern=r"^/phone (.*)")
 async def phone(event):
@@ -92,7 +92,7 @@ async def phone(event):
 __help__ = """
 *Commands:*
 • `/phone <no>`*:* find phone number details.
-@SophiaSLBot
+@Rosi_Gp_bot 
 """
 
 __mod_name__ = "Phone"
