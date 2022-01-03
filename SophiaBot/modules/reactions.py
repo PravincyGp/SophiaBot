@@ -1,7 +1,7 @@
 import random
 
-from SophiaBot import dispatcher
-from SophiaBot.modules.disable import DisableAbleCommandHandler
+from Rosi import dispatcher
+from Rosi.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
