@@ -1,44 +1,38 @@
-<h1 align="center"><b>❤ Sophia v3 ❤</b></h1>
+<h1 align="center"><b>✨⛄ 𝐑⭕𝐒𝐈 ☃️✨</b></h1>
 
 
-<p align="center"><a href="https://t.me/SophiaSupport_Official"><img src="https://telegra.ph/file/f6afa44d010598c379503.jpg" width="400"></a></p>
+<p align="center"><a href="https://t.me/RosiSupport"><img src="https://telegra.ph/file/bb5c64cf6fc7facd37b08.jpg" width="400"></a></p>
 <p align="center">
   <h4 align="center"><b>A Powerful, Smart And Simple Group Manager <br> ... Written with  Pyrogram and Telethon...</b></h4>  
 
 <p align="center">
-    <a href="https://github.com/dihanofficial/sophiabot/stargazers"><img src="https://img.shields.io/github/stars/dihanofficial/SophiaBot?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
+    <a href="https://github.com/PravincyGp/Rosi"><img src="https://img.shields.io/github/stars/dihanofficial/SophiaBot?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
 </p>
 <p align="center">
-    <a href="https://app.codacy.com/manual/dihanofficial/Sophiabot/dashboard"> <img src="https://img.shields.io/codacy/grade/4d58f2a402b54aed8a7d95f7add45a81?color=brightgreen&logo=codacy&logoColor=green&style=for-the-badge" alt="Codacy" /></a>
-    <a href="https://github.com/dihanofficial/sophiabot"> <img src="https://img.shields.io/github/repo-size/dihanofficial/sophiabot?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/dihanofficial/sophiabot/commits/dihanofficial"> <img src="https://img.shields.io/github/last-commit/dihanofficial/sophiabot?color=brown&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/dihanofficial/sophia/issues"> <img src="https://img.shields.io/github/issues/dihanofficial/sophiabot?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/dihanofficial/sophiabot/network/members"> <img src="https://img.shields.io/github/forks/dihanofficial/sophiabot?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
+    <a href="https://app.codacy.com/manual/PravincyGp/Rosi/dashboard"> <img src="https://img.shields.io/codacy/grade/4d58f2a402b54aed8a7d95f7add45a81?color=brightgreen&logo=codacy&logoColor=green&style=for-the-badge" alt="Codacy" /></a>
+    <a href="https://github.com/PravincyGp/Rosi"> <img src="https://img.shields.io/github/repo-size/PravincyGp/Rosi?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/PravincyGp/Rosi/commits/dihanofficial"> <img src="https://img.shields.io/github/last-commit/PravincyGp/Rosi?color=brown&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/PravincyGp/Rosi/issues"> <img src="https://img.shields.io/github/issues/PravincyGp/Rosi?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/PravincyGp/Rosi/network/members"> <img src="https://img.shields.io/github/forks/PravincyGp/Rosi?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
     <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
 </p>
 
 
- <b> ⭐️ Thanks to everyone who starred Sophia, That is the greatest pleasure we have ! </b> 
+ <b> ⭐️ Thanks to everyone who starred Rosi, That is the greatest pleasure we have ! </b> 
 
 
 
-## Avaiilable on Telegram as [@SophiaSLBot](https://t.me/sophiaslbot)
-
-### Video Tutorial:
-Complete guide on deploying @SophiaSLBot's clone on Heroku.
-
-🙋‍♂️ Video by [Dihan Randila](https://youtu.be/Yyw2TfwQTSg) ☆
-[![YouTube](https://img.shields.io/badge/YouTube-Video%20Tutorial-red?logo=youtube)](https://youtu.be/Yyw2TfwQTSg)
+## Avaiilable on Telegram as [@Rosi_Gp_bot](https://t.me/Rosi_Gp_bot)
 
 ### Deploy To Heroku</h4>
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/dihanofficial/Sophiabot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PravincyGp/Rosi)
 
 
 
 
 ## Join my Updates Channel & Support Chats
-<a href="https://t.me/SophiaSUPPort_official"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
-<a href="https://t.me/SophiaUpdates"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
+<a href="https://t.me/RosiSupport"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a> "></a>
+<a href="https://t.me/RosiUpdates"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
 
 
 
@@ -47,7 +41,7 @@ Complete guide on deploying @SophiaSLBot's clone on Heroku.
 There are two possible ways of configuring your bot: a config.py file, or ENV variables.
 
 The preferred version is to use a `config.py` file, as it makes it easier to see all your settings grouped together.
-This file should be placed in your `SophiaBot` folder, alongside the `__main__.py` file. 
+This file should be placed in your `Rosi` folder, alongside the `__main__.py` file. 
 This is where your bot token will be loaded from, as well as your database URI (if you're using a database), and most of 
 your other settings.
 
@@ -56,7 +50,7 @@ defaults set in the sample_config, hence making it easier to upgrade.
 
 An example `config.py` file could be:
 ```
-from SophiaBot.sample_config import Config
+from Rosi.sample_config import Config
 
 class Development(Config):
     OWNER_ID = 12345  # your telegram ID
@@ -226,4 +220,3 @@ For starters click on this button
 - [WilliamButcherBot](https://github.com/thehamkercat/WilliamButcherBot)
 - [Mr-Dark-Prince](https://github.com/Mr-Dark-Prince/)
 - [Im-Janindu](https://github.com/imjanindu)
-
